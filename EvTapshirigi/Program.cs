@@ -4,19 +4,23 @@
     {
         static void Main(string[] args)
         {
-            int[] arr = { -2, -3, 9, 10 };
+            Console.Write("Massivin uzunlugunu daxil et: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
             int sum = 0;
             int count = 0;
 
-            for (int i = 0; i < arr.Length ; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
+                Console.Write($"arr[{i}]= ");
+                arr[i] = int.Parse(Console.ReadLine());
                 if (arr[i] < 0)
                 {
                     sum += arr[i];
                     count++;
                 }
             }
-            Console.Write($"cem {sum} say {count}");
+            Console.WriteLine($"cem: {sum}  say: {count}");
         }
        
     }
