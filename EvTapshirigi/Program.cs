@@ -3,7 +3,8 @@
     internal class Program
     {
         static void Main(string[] args)
-        {
+        {    //Menfi elementlerin cemi ve sayi
+            
             Console.Write("Massivin uzunlugunu daxil et: ");
             int n = int.Parse(Console.ReadLine());
             int[] arr = new int[n];
